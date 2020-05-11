@@ -6,9 +6,69 @@
     <title>Java script</title>
 </head>
 <body>
+    <!-- If == means that check only value not datatype
+    or if === means it also checking the data type if 
+    we compare the integer value and other side we using "10",
+    than by 1st case it shows true and in 2nd one show false because it 
+    treat like a string. -->
     <script>
-        alert("Welcome to Antal Production");
-        document.write("Welcome to Antal's site");
+        // document.write("Welcome to Antal's site");
+        var a = 10;
+        var b = 30;
+        var c = a+b;
+        document.write(c);
+
+        // var d = --c;
+        // var d = a < b;
+        // document.write("<br>");
+        // document.write(d);
+
+        document.write("<br>");
+        if(a < b){
+            document.write("Yes condition is true")
+        }
+        else if(a==b){
+            document.write("the variable is equal")
+        }
+        else{
+            document.write("Sorry condition is false")
+        }
+        document.write("<br>");
+
+        switch(a) {
+            
+            case 10 : document.write("its 1st case");
+            break;
+
+            case 30 : document.write("2nd case");
+            break;
+
+        }
+        document.write("<br>");
+        //loop operations
+        var count = 5;
+        while(count<10){
+            document.write("we founding the break of loop");
+            document.write("<br>");
+            count++;
+        }
+        if(count=10){
+            document.write("Final destination");
+        }
+        document.write("<br>");
+        
+        //for do-while loop
+        var cond = 10;
+        do{
+            document.write("For do while loop<br></br>");
+            cond++;
+        }while(cond<10);
+
+        //For loop
+        for(i = 0;i < 2;i++){
+            document.write("Ankur <br>");
+        }
+        
     </script>
 </body>
 </html>
